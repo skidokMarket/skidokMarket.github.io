@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <meta property="og:image" content="https://i.postimg.cc/0r111nTK/2-20241212095746.png">
     <meta property="og:url" content="https://skidokMarket.github.io/">
     <title>Скидки до 30%</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Raleway', sans-serif;
@@ -28,7 +28,6 @@
         nav {
             position: fixed;
             top: 0;
-            left: 0; /* Добавлено для устранения смещения */
             width: 100%;
             background-color: rgba(0, 0, 0, 0.8);
             padding: 10px 0;
@@ -109,7 +108,6 @@
         .steps-card {
             background-color: rgba(100,100,100,.5); 
             color: #ffffff; 
-            text-align:left; /* Выравнивание текста по левому краю */
         }
 
         .faq-question {
@@ -122,7 +120,7 @@
         }
 
         .faq-answer {
-            display: none; /* Скрываем ответы по умолчанию */
+            display: none;
             padding: 10px;
             background-color: rgba(100,100,100,.5);
             border-radius: 5px;
@@ -153,7 +151,7 @@
 <body>
 
 <nav>
-    <div class="hamburger" onclick="toggleMenu()" aria-label="Меню">☰</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul>
         <li><a href="#discounts">Скидки</a></li>
         <li><a href="#how-to-get">Как получить скидку</a></li>
@@ -172,10 +170,10 @@
 
     <div class="card steps-card">
         <h3>Шаги:</h3>
-        <ol style="text-align:left;"> <!-- Добавлено выравнивание текста по левому краю -->
+        <ol>
            <li><strong>Выберите товар:</strong> Просмотрите наш ассортимент и выберите товары для получения скидки.</li>
            <li><strong>Отправьте ссылку:</strong> Скопируйте ссылку на выбранный товар и отправьте ее нам в WhatsApp.</li>
-           <li><strong>Получите доступ к оформлению скидки:</strong> После получения ссылки мы предоставим вам доступ к оформлению скидки.</li>
+           <li><strong>Получите специальную ссылку:</strong> После получения ссылки мы отправим вам специальную ссылку для оформления заказа со скидкой.</li>
        </ol>
        <p><strong>Контактная информация:</strong></p>
        <p>Если у вас есть вопросы:<br><span style="color:#ffffff;">+7 937 934-99-14</span>.</p>
@@ -204,40 +202,38 @@
        <a href="https://market.yandex.ru" target="_blank" class="button yandex-button">Смотреть товары на Яндекс Маркет</a>
    </div>
 
-   <!-- Раздел FAQ -->
    <h2 id="faq">Часто задаваемые вопросы (FAQ)</h2>
 
    <div class="card">
+       <!-- Вопросы и ответы -->
        <!-- Вопрос -->
-       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded="false" role="button" tabindex="0">Как я могу получить скидку?</div>
-       <div class="faq-answer">Чтобы получить скидку, просто выберите товары, на которые хотите получить скидку, и отправьте их ссылки нам в WhatsApp. После этого мы предоставим вам доступ к оформлению скидки.</div>
+       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded="false">Как я могу получить скидку?</div>
+       <div class="faq-answer">Чтобы получить скидку просто выберите товары на которые хотите получить скидку и отправьте их ссылки нам в WhatsApp. После этого вы получите специальную ссылку для оформления заказа со скидкой.</div>
 
        <!-- Вопрос -->
-       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded="false" role="button" tabindex="0">На какие товары распространяется скидка?</div>
+       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded="false">На какие товары распространяется скидка?</div>
        <div class="faq-answer">Скидка до 30% доступна на все товары в нашем ассортименте.</div>
 
        <!-- Вопрос -->
-       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded="false" role="button" tabindex="0">Как долго действует скидка?</div>
+       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded="false">Как долго действует скидка?</div>
        <div class="faq-answer">Скидка будет действовать в течение 24 часов с момента её получения.</div>
 
        <!-- Вопрос -->
-       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded="false" role="button" tabindex="0">Могу ли я использовать скидку несколько раз?</div>
-       <div class="faq-answer">Да, вы можете отправлять ссылки на разные товары и получать специальные условия для каждого из них.</div>
+       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded="false">Могу ли я использовать скидку несколько раз?</div>
+       <div class="faq-answer">Да вы можете отправлять ссылки на разные товары и получать специальные ссылки для каждого из них.</div>
 
        <!-- Вопрос -->
-       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded "false" role "button" tabindex "0">Что делать если у меня возникли проблемы с получением скидки?</div>
-       <div class ="faq-answer">Если у вас возникли какие-либо проблемы или вопросы пожалуйста свяжитесь с нами через WhatsApp и мы с радостью вам поможем.</div>
+       <div class="faq-question" onclick="toggleAnswer(this)" aria-expanded="false">Что делать если у меня возникли проблемы с получением скидки?</div>
+       <div class="faq-answer">Если у вас возникли какие-либо проблемы или вопросы пожалуйста свяжитесь с нами через WhatsApp и мы с радостью вам поможем.</div>
 
    </div>
 
-   <!-- Контактная информация -->
-   <div class ="contact-info" id ="contact">
+   <div class="contact-info" id="contact">
        <h2>Связь с нами</h2>
        <p>Для получения дополнительной информации вы можете связаться с нами через WhatsApp:</p>
-          <p><a href="#" style ="color:#ffffff;">+7 937 934-99-14</a></p>  
+          <p><a href="https://wa.me/79379349914" style="color:#ffffff;">+7 937 934-99-14</a></p>  
    </div>
 
-   <!-- Заключительный текст -->
    <p>Не упустите шанс сэкономить! Заходите на наш сайт и выбирайте лучшие товары по сниженным ценам.</p>  
 </div>
 
@@ -245,16 +241,14 @@
 // Функция для переключения ответов FAQ
 function toggleAnswer(element) {
     const answer = element.nextElementSibling;
-
+    const isExpanded = answer.style.display === "block";
+    
     // Скрыть или показать ответ
-    if (answer.style.display === "block") {
-        answer.style.display = "none";
-    } else {
-        answer.style.display = "block";
-    }
+    answer.style.display = isExpanded ? "none" : "block"; 
     
     // Обновление aria-expanded
-    element.setAttribute("aria-expanded", answer.style.display === "block");
+    element.setAttribute("aria-expanded", !isExpanded); 
+    
 }
 
 // Функция для переключения мобильного меню
@@ -264,16 +258,7 @@ function toggleMenu() {
     // Переключение класса активного состояния
     menu.classList.toggle('active');
 }
-
-// Добавление обработчика событий для клавиатуры
-document.querySelectorAll('.faq-question').forEach(question => {
-    question.addEventListener('keypress', (event) => {
-      if (event.key === 'Enter') {
-          toggleAnswer(question);
-      }
-    });
-});
 </script>
 
-</body>
-</html>
+
+</body></html>
